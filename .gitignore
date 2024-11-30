@@ -1,2 +1,3 @@
 weights/Meta-Llama-3-8B-Instruct.Q4_K_M.gguf
 weights/T-lite-instruct-0.1.Q8_0.gguf
+.venv

@@ -7,7 +7,7 @@ COPY ./requirements.txt .
 
 ENV CMAKE_ARGS="-DGGML_CUDA=on"
 
-RUN apt-get update -y && apt-get install -y python3 python3-pip libcudnn8 libcudnn8-dev -y && \
+RUN apt-get update -y && apt-get install -y python3 python3-pip libcudnn8 libcudnn8-dev -y ninja-build -y && \
 ln -s /usr/bin/python3 /usr/bin/python && \    
 pip install --no-cache-dir -r requirements.txt 
 
